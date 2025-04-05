@@ -41,8 +41,8 @@ Before installing the application, ensure you have the following tools installed
 
 1. **Clone the repository**:
    ```bash
-   git clone https://your-repository-url
-   cd heart-rate-analytics
+   git clone https://github.com/avigibridev/Eitan.git
+   cd Eitan
    ```
 
 2. **Build and run the application with Docker Compose**:
@@ -78,8 +78,8 @@ Before installing the application, ensure you have the following tools installed
 
 #### Step 1: Clone the repository
 ```bash
-git clone https://your-repository-url
-cd heart-rate-analytics
+ git clone https://github.com/avigibridev/Eitan.git
+ cd Eitan
 ```
 
 #### Step 2: Install Dependencies
