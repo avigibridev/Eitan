@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "3e867abd-fc0f-4c13-8f44-03bfd350e832",
+		"name": "Heart Rate Service API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21352923"
+	},
+	"item": [
+		{
+			"name": "Get All Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get High Heart Rate Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/heart-rate/:patientId/high-heart-rate-events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heart-rate",
+						":patientId",
+						"high-heart-rate-events"
+					],
+					"variable": [
+						{
+							"key": "patientId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Heart Rate Analytics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/heart-rate/:patientId/analytics?start=2024-03-01T00:00:00Z&end=2024-03-02T23:59:59Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heart-rate",
+						":patientId",
+						"analytics"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2024-03-01T00:00:00Z"
+						},
+						{
+							"key": "end",
+							"value": "2024-03-02T23:59:59Z"
+						}
+					],
+					"variable": [
+						{
+							"key": "patientId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient Request Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/heart-rate/:patientId/request-count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heart-rate",
+						":patientId",
+						"request-count"
+					],
+					"variable": [
+						{
+							"key": "patientId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Heart Rate Analytics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/heart-rate/analytics?start=2024-03-01T00:00:00Z&end=2024-03-02T23:59:59Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heart-rate",
+						"analytics"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2024-03-01T00:00:00Z"
+						},
+						{
+							"key": "end",
+							"value": "2024-03-02T23:59:59Z"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
